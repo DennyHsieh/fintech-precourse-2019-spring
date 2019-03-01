@@ -4,6 +4,7 @@ import pandas as pd
 from bs4 import BeautifulSoup as bs
 from datetime import datetime, timedelta
 
+
 # A list of date string in the date range we want
 start_date = "2018-07-01"
 stop_date = "2018-12-31"
@@ -68,7 +69,7 @@ for date in dates:
     data = process_document(doc, date)
     all_data += data
 
-# Check the result
+# Check the result (first five datas)
 all_data[0:5]
 
 # Save as pkl file
