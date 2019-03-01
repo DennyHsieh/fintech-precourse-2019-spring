@@ -1,1 +1,1 @@
-# fintech_precourse_2019_spring
+# Fintech Pre Course - 2019 Spring
