@@ -1,8 +1,10 @@
 # FinTech PreCourse - 2019 Spring
+HW0
 
 ## Overview
 
-The modified code is "mycrawler.py"
+- The modified code is "mycrawler.py"
+- The demo of the modified code is "mycrawler_demo.ipynb"
 
 ### Level 1: Flowchart from TA's code (origin_crawler.py)
 ![](img/flowchart_hw0.jpg)

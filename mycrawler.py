@@ -66,7 +66,7 @@ def process_document(document, date):
 
 
 # Crawl over the news on the site, store the data in variable "all_data"
-def save_data():
+def save_data(start_date, stop_date):
     # cnt = 0
     all_data = list()
 
@@ -96,17 +96,17 @@ def read_data():
 
 
 if __name__ == "__main__":
-    start_date = "2018-07-01"
-    stop_date = "2018-12-31"
+    start_date = "2018-10-24"
+    stop_date = "2019-01-24"
 
     all_data = read_data()
     # Crawl the data again if no data exists or the dataframe is not the right form
     if not all_data:
-        save_data()
+        save_data(start_date, stop_date)
         all_data = read_data()
 
-    # Check the result (first five datas)
-    check_all_data = all_data[0:5]
+    # Check the result (first three datas)
+    check_all_data = all_data[0:3]
 
     # Turn it into pandas dataframe
     pd_all_data = pd.DataFrame(all_data)[['date', 'title', 'link', 'content', 'tags']].head()
